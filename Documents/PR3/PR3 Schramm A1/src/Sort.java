@@ -6,13 +6,14 @@ import java.util.List;
  *
  * @author Markus Gumbel (m.gumbel@hs-mannheim.de)
  */
+@FunctionalInterface
 public interface Sort<E extends Comparable<E>> {
 
   /**
    * Sortiert die Liste aufsteigend.
    *
    * @param list Die zu sortierende Liste.
-   */
+
   default void sort(List<E> list) {
     // Liefert den Comparator, der dem Comparable entspricht:
     Comparator<E> cmp = E::compareTo;
