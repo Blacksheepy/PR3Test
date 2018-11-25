@@ -1,6 +1,5 @@
 import java.util.Arrays;
-  class Haubtprogramm{
-
+  class Hauptprogramm{
 
 /* using object as a data type is not save.
 this causes allsorts of warnings
