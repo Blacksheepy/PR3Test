@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.Random;
 
 public class Main<<E extends Comparable<E>> implements Sort<E>  {
-	
+	/*
 	
 	private static final int Comparator = 0;
 
@@ -35,9 +35,6 @@ public class Main<<E extends Comparable<E>> implements Sort<E>  {
 		Sort<Integer> sortIt = (list, comparator) -> {
 			
 		};
-		
-
-
-		
 	}
+	*/
 }
