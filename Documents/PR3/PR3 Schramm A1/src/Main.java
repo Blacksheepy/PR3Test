@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.ArrayList;
 import java.util.Random;
 
-public class Main<<E extends Comparable<E>> implements Sort<E>  {
+public class Main {
 	/*
 	
 	private static final int Comparator = 0;
@@ -18,11 +18,11 @@ public class Main<<E extends Comparable<E>> implements Sort<E>  {
 		Comparator<E> cmp = new Comparator<E>;
 		
 		//Fill the array with 10 random numbers up to 100
-		/*
+
 		for (int i = 0; i<=10; i++) {
 			arr.add(number = (int)(Math.random()*100));
 		}
-		*/
+
 		for(int i = 0; i< list.length; i++) {
 			list[i] = (int)(Math.random()*100);
 			System.out.print(list[i] + " ");

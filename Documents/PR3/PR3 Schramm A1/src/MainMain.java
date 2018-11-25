@@ -1,5 +1,3 @@
-package Aufgabe1;
-
 import java.util.Comparator;
 import java.util.List;
 
