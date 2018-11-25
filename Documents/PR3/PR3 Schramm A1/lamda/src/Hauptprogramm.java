@@ -35,22 +35,8 @@ Integer[] nums= {9,43,357,323 ,22,656,1, 878,3,656,23,67,34};
   System.out.println("different array after sorting");
   System.out.println(Arrays.toString(lyrics));
   System.out.println("before sorting \n"+Arrays.toString(nums));
-  //sortArray(nums, new BubbleSort());
-  sortArray(nums, (nums)->{
-    @Override
-    sort(nums){
-    Integer temp;
-    for (int i = 0; i <= nums.length - 1; i++) {
-        for (int j = 0; j < nums.length - i - 1; j++) {
-            if (nums[j].compareTo(nums[j + 1]) > 0) {
-                temp = nums[j];
-                nums[j] = nums[j + 1];
-                nums[j + 1] = temp;
-            }
-        }
-    }
-  }
-  });
+  sortArray(nums, new BubbleSort());
+
   System.out.println("after sorting \n"+Arrays.toString(nums));
 
 }
