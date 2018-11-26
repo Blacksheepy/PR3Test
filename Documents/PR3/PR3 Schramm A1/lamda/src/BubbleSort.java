@@ -1,7 +1,7 @@
 import java.util.Comparator;
 
  class BubbleSort<A extends Comparable<A>> implements Sort<A> {
-
+//same method as other sort because of same interface sort.
     public void sort(A arr[]) {
         A temp;
         for (int i = 0; i <= arr.length - 1; i++) {

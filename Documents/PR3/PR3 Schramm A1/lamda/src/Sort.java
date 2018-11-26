@@ -1,6 +1,6 @@
 import java.util.Comparator;
    @FunctionalInterface
-//public interface Sort<A extends Comparable<A>>  {
+//functional interface only works with one mehtod.
 interface Sort<A>{
 
     public  void  sort(A arr[]);

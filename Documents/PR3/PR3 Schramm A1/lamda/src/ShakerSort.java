@@ -1,5 +1,5 @@
 public class ShakerSort<A extends Comparable<A>> implements Sort<A> {
-
+//same mehtod sort because of same interface implementation
     public  void sort(A arr[]) {
         A temp;
 

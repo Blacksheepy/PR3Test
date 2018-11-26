@@ -17,6 +17,7 @@ and the method was required to be static*/
 
 
 public static void main(String[] ARGV){
+  //Pre initialized arrays to test 
    String[] lyrix={"So", "we", "sailed"," up", "to", "the", "sun","'Til", "we" ,"found",
   "the", "sea", "of", "green", "And", "we","lived", "beneath", "the" ,"waves", "In", "our", "yellow", "sub","marine" };
 
