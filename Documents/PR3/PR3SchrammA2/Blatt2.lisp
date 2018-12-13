@@ -15,8 +15,8 @@
 )
 
 ; Aufgabe 1c Elemente tauschen
-(defun rotiere(list )
-)
+(defun rotiere(li)
+(append (cdr li)(list (car li))))
 
 ; Aufgabe 1d Element einfügen
 
