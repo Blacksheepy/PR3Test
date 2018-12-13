@@ -1,11 +1,17 @@
 ;Aufgabe 1a liste umkehren
-(defun my-reverse(list )
-;code aus vorlesung
+(defun myreverse (liste)
+	(cond ((null liste) liste)
+		(T (append (myreverse (cdr liste)) (list (car liste))))
+	)
 )
 
 ;Aufgabe 1b Geschachtelte Listen umkehren
-(defun my-reverseR(list )
-;code aus forlesung
+;ohne list bei append wird liste platt gemacht, also unterlisten aufgelöst
+(defun myreverseN (liste)
+	(cond ((null liste) liste)
+		((listp (car liste)) (append (myreverseN (cdr liste)) (list (myreverseN (car liste)))))
+		(T (append (myreverseN (cdr liste)) (list (car liste))))
+	)
 )
 
 ; Aufgabe 1c Elemente tauschen
