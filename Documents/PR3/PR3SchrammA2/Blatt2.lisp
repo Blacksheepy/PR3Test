@@ -18,8 +18,12 @@
  )
 
 ;Aufgabe 1e Länge einer Liste berechnen
-(defun my-length(list)
-)
+
+(defun my-length (list)
+  (if list
+    (+ 1(my-len (cdr list))) ;if the list or element is not null,  call function recursively and add one
+    0)); else zero
+
 ; Aufgabe 1f Länge einer geschachtelten Liste berechnen
 (defun my-lengthR(list)
 )
