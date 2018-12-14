@@ -21,6 +21,7 @@
 ; Aufgabe 1d Element einfügen
 
 (defun neues-vorletztes( lis)
+
  )
 
 ;Aufgabe 1e Länge einer Liste berechnen
@@ -32,4 +33,8 @@
 
 ; Aufgabe 1f Länge einer geschachtelten Liste berechnen
 (defun my-lengthR(list)
+(if(eq nil liste) (+ 0) ;rekursin end
+  (if (listp (first liste)) ;else if
+  (+ (my-lengthR(first liste)) (my-lengthR (rest liste)))	;is list
+  (+ 1 (my-lengthR(rest liste )))))	; not list
 )
