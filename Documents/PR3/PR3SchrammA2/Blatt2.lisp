@@ -19,13 +19,16 @@
 (append (cdr li)(list(car li))))
 
 ; Aufgabe 1d Element einfügen
-
-(defun neues-vorletztes( lis)
-
- )
+(defun neues-vorletztes (liste element)
+  (setf ReverseListe (reverse liste))
+  (setf saveFirstElemListe (list(car ReverseListe)))
+  (setf SaveAllOtherListElem (cdr ReverseListe))
+  (setf addElem (cons element SaveAllOtherListElem))
+  (setf CompleteList(append saveFirstElemListe addElem))
+  (reverse CompleteList)
+)
 
 ;Aufgabe 1e Länge einer Liste berechnen
-
 (defun my-length (list)
   (if list
     (+ 1(my-len (cdr list))) ;if the list or element is not null,  call function recursively and add one
