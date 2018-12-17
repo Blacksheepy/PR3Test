@@ -20,12 +20,7 @@
 
 ; Aufgabe 1d Element einfügen
 (defun neues-vorletztes (liste element)
-  (setf ReverseListe (reverse liste))
-  (setf saveFirstElemListe (list(car ReverseListe)))
-  (setf SaveAllOtherListElem (cdr ReverseListe))
-  (setf addElem (cons element SaveAllOtherListElem))
-  (setf CompleteList(append saveFirstElemListe addElem))
-  (reverse CompleteList)
+  (reverse(append(list(car(reverse liste))) (cons element(cdr(reverse liste)))))
 )
 
 ;Aufgabe 1e Länge einer Liste berechnen
