@@ -27,4 +27,8 @@ eine neue Liste zurückliefert, in der das Element als neues vorletztes Element 
   (reverse CompleteList)
 )
 
+(defun neues-vorletztes (liste element)
+  (reverse(append(list(car(reverse liste))) (cons element(cdr(reverse liste)))))
+)
+
 (neues-vorletztes '(1 2 3 4) 20)
